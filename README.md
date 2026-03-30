@@ -1,4 +1,4 @@
-# blueingel.github.io
+# guandan
 
 Guandan / 掼蛋 的产品介绍网站，部署于 GitHub Pages，供 Epic Developer Portal 审核使用。
 
@@ -22,21 +22,43 @@ All pages use a **two-column bilingual layout**: Chinese on the left, English on
 
 ---
 
+## 如何重命名仓库 / How to Rename the Repository
+
+> **⚠️ 需要手动操作 / Manual action required**
+
+将仓库名从 `blueingel.github.io` 改为 `guandan`，需要在 GitHub 网页上手动操作：
+
+1. 进入仓库页面，点击 **Settings**（设置）  
+   Go to the repository page and click **Settings**
+
+2. 在 **General** 页面顶部找到 **Repository name** 字段，将名称改为 `guandan`  
+   On the **General** page, find the **Repository name** field and change it to `guandan`
+
+3. 点击 **Rename** 按钮确认  
+   Click **Rename** to confirm
+
+4. 重命名完成后，GitHub Pages 的网址将自动变为：  
+   After renaming, the GitHub Pages URL will automatically become:
+
+```
+https://shupengzhu.github.io/guandan/
+```
+
+---
+
 ## 网站地址说明 / About the Site URL
 
-> **重要：** 这个仓库名是 `blueingel.github.io`，拥有者是 GitHub 用户 `shupengzhu`，**仓库名与用户名不同**，因此 GitHub Pages 将其视为**项目站点（Project Site）**，而不是用户站点（User Site）。
->
-> **Important:** The repository is named `blueingel.github.io` and is owned by GitHub user `shupengzhu`. Because the repository name does **not** match the owner's username, GitHub Pages treats it as a **project site**, not a user site.
+> **重命名后的正确访问地址 / Correct URL after renaming:**
 
 | 类型 | 仓库名规则 | 访问地址 |
 |------|-----------|---------|
 | 用户站点 (User Site) | 必须是 `shupengzhu.github.io` | `https://shupengzhu.github.io` |
-| **项目站点 (Project Site)** | **任意名称**（本仓库即此类） | **`https://shupengzhu.github.io/blueingel.github.io/`** |
+| **项目站点 (Project Site)** | **任意名称**（本仓库即此类） | **`https://shupengzhu.github.io/guandan/`** |
 
 **本网站的正确访问地址 / This site's URL:**
 
 ```
-https://shupengzhu.github.io/blueingel.github.io/
+https://shupengzhu.github.io/guandan/
 ```
 
 `https://shupengzhu.github.io`（不带路径）显示的是另一个仓库的内容，与本仓库无关。
@@ -56,8 +78,8 @@ https://shupengzhu.github.io/blueingel.github.io/
 3. 点击 **Save**，等待几分钟后网站即可访问  
    Click **Save** and wait a few minutes for the site to go live
 
-4. 网站访问地址（固定）：`https://shupengzhu.github.io/blueingel.github.io/`  
-   The site will be available at: `https://shupengzhu.github.io/blueingel.github.io/`
+4. 网站访问地址（固定）：`https://shupengzhu.github.io/guandan/`  
+   The site will be available at: `https://shupengzhu.github.io/guandan/`
 
 ---
 
