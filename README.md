@@ -22,6 +22,29 @@ All pages use a **two-column bilingual layout**: Chinese on the left, English on
 
 ---
 
+## 网站地址说明 / About the Site URL
+
+> **重要：** 这个仓库名是 `blueingel.github.io`，拥有者是 GitHub 用户 `shupengzhu`，**仓库名与用户名不同**，因此 GitHub Pages 将其视为**项目站点（Project Site）**，而不是用户站点（User Site）。
+>
+> **Important:** The repository is named `blueingel.github.io` and is owned by GitHub user `shupengzhu`. Because the repository name does **not** match the owner's username, GitHub Pages treats it as a **project site**, not a user site.
+
+| 类型 | 仓库名规则 | 访问地址 |
+|------|-----------|---------|
+| 用户站点 (User Site) | 必须是 `shupengzhu.github.io` | `https://shupengzhu.github.io` |
+| **项目站点 (Project Site)** | **任意名称**（本仓库即此类） | **`https://shupengzhu.github.io/blueingel.github.io/`** |
+
+**本网站的正确访问地址 / This site's URL:**
+
+```
+https://shupengzhu.github.io/blueingel.github.io/
+```
+
+`https://shupengzhu.github.io`（不带路径）显示的是另一个仓库的内容，与本仓库无关。
+
+`https://shupengzhu.github.io` (without a path) belongs to a different repository and is unrelated to this project.
+
+---
+
 ## 部署到 GitHub Pages / Deploying to GitHub Pages
 
 1. 进入仓库 → **Settings** → **Pages**  
@@ -33,8 +56,8 @@ All pages use a **two-column bilingual layout**: Chinese on the left, English on
 3. 点击 **Save**，等待几分钟后网站即可访问  
    Click **Save** and wait a few minutes for the site to go live
 
-4. 访问地址通常为：`https://<username>.github.io`  
-   The site will be available at `https://<username>.github.io`
+4. 网站访问地址（固定）：`https://shupengzhu.github.io/blueingel.github.io/`  
+   The site will be available at: `https://shupengzhu.github.io/blueingel.github.io/`
 
 ---
 
