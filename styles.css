@@ -1,0 +1,374 @@
+/* =========================================================
+   Guandan – Shared Stylesheet
+   Theme: dark background, green felt, gold accents
+   Layout: two-column bilingual (ZH left / EN right)
+   ========================================================= */
+
+/* ── Reset & base ─────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:          #0e1a12;
+  --surface:     #162010;
+  --surface2:    #1c2b18;
+  --border:      #2e4a2a;
+  --gold:        #c9a84c;
+  --gold-light:  #e8c96a;
+  --green:       #3a7d44;
+  --green-light: #4caf62;
+  --text-main:   #e8e6e0;
+  --text-muted:  #8fa88a;
+  --text-en:     #d4d0c4;
+  --divider:     #2a3d26;
+  --radius:      8px;
+  --font-zh:     "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --font-en:     "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-main);
+  font-family: var(--font-en);
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--gold-light);
+  text-decoration: underline;
+}
+
+/* ── Site header ──────────────────────────────────────────── */
+.site-header {
+  background: var(--surface);
+  border-bottom: 2px solid var(--green);
+  padding: 2rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.site-header .game-title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+  font-family: var(--font-zh);
+  text-shadow: 0 2px 8px rgba(201, 168, 76, 0.35);
+}
+
+.site-header .game-subtitle {
+  margin-top: 0.6rem;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  color: var(--text-muted);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header nav {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.site-header nav a {
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.9rem;
+  border-radius: var(--radius);
+  transition: color 0.2s, border-color 0.2s;
+}
+.site-header nav a:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+  text-decoration: none;
+}
+
+/* ── Main two-column layout ───────────────────────────────── */
+.main-wrapper {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.bilingual-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+/* Left column – Chinese */
+.col-zh {
+  background: var(--surface);
+  border-right: 1px solid var(--divider);
+  padding: 2rem 1.5rem;
+  font-family: var(--font-zh);
+}
+
+/* Right column – English */
+.col-en {
+  background: var(--surface2);
+  padding: 2rem 1.5rem;
+  font-family: var(--font-en);
+  color: var(--text-en);
+}
+
+/* Column header label */
+.col-lang-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green-light);
+  border: 1px solid var(--green);
+  border-radius: 3px;
+  padding: 0.15rem 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ── Sections within a column ─────────────────────────────── */
+.col-section {
+  margin-bottom: 2rem;
+}
+
+.col-section:last-child {
+  margin-bottom: 0;
+}
+
+.col-section h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gold);
+  border-left: 3px solid var(--green);
+  padding-left: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.col-section p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+
+/* Hero intro paragraph */
+.intro-text {
+  font-size: 1rem;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+/* ── Feature list ─────────────────────────────────────────── */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.feature-list li::before {
+  content: "♦";
+  color: var(--green-light);
+  font-size: 0.75rem;
+  margin-top: 0.3rem;
+  flex-shrink: 0;
+}
+
+.feature-list .badge-wip {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.1rem 0.35rem;
+  white-space: nowrap;
+}
+
+/* ── Note / info box ──────────────────────────────────────── */
+.note-box {
+  background: rgba(58, 125, 68, 0.08);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--green);
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ── Support block ────────────────────────────────────────── */
+.support-block {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.col-zh .support-block {
+  background: var(--surface);
+}
+
+.support-block a {
+  color: var(--gold);
+}
+
+/* ── Notice bar (three statements) ───────────────────────── */
+.notice-bar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 0;
+  padding: 0 1rem;
+}
+
+.notice-bar-inner {
+  background: rgba(58, 125, 68, 0.08);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.notice-bar-zh,
+.notice-bar-en {
+  padding: 0 1rem;
+}
+
+.notice-bar-zh {
+  border-right: 1px solid var(--divider);
+  font-family: var(--font-zh);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.notice-bar-en {
+  font-family: var(--font-en);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.notice-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.notice-bar ul li::before {
+  content: "· ";
+  color: var(--green-light);
+}
+
+/* ── Site footer ──────────────────────────────────────────── */
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 1.2rem 1rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 2.5rem;
+}
+
+.site-footer a {
+  color: var(--text-muted);
+}
+.site-footer a:hover {
+  color: var(--gold);
+}
+
+/* ── Back link ────────────────────────────────────────────── */
+.back-link {
+  display: inline-block;
+  margin: 0 1rem 1rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+.back-link:hover {
+  color: var(--gold);
+}
+
+/* ── Privacy page sections ────────────────────────────────── */
+.privacy-section {
+  margin-bottom: 1.6rem;
+}
+
+.privacy-section h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 0.4rem;
+}
+
+.privacy-section p {
+  font-size: 0.93rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.last-updated {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+/* ── Responsive – stack columns on narrow screens ─────────── */
+@media (max-width: 720px) {
+  .bilingual-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .col-zh {
+    border-right: none;
+    border-bottom: 2px solid var(--divider);
+  }
+
+  .notice-bar-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .notice-bar-zh {
+    border-right: none;
+    border-bottom: 1px solid var(--divider);
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+}

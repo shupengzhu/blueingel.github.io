@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 – Page Not Found / 页面不存在 | Guandan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <style>
+    .not-found-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 1rem;
+      gap: 1rem;
+    }
+    .not-found-code {
+      font-size: clamp(4rem, 12vw, 7rem);
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      opacity: 0.6;
+    }
+    .not-found-msg-zh {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      font-family: var(--font-zh);
+    }
+    .not-found-msg-en {
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+    .not-found-link {
+      margin-top: 1rem;
+      display: inline-block;
+      border: 1px solid var(--green);
+      color: var(--gold);
+      padding: 0.5rem 1.4rem;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+    }
+    .not-found-link:hover {
+      background: rgba(58,125,68,0.12);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="game-title">Guandan &nbsp;/&nbsp; 掼蛋</div>
+    <nav>
+      <a href="index.html">首页 / Home</a>
+      <a href="privacy.html">隐私政策 / Privacy Policy</a>
+    </nav>
+  </header>
+
+  <div class="not-found-wrapper">
+    <div class="not-found-code">404</div>
+    <p class="not-found-msg-zh">页面不存在</p>
+    <p class="not-found-msg-en">Page not found</p>
+    <a href="index.html" class="not-found-link">← 返回首页 / Back to Home</a>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Blueingel Studio</p>
+  </footer>
+
+</body>
+</html>
